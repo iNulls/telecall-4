@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS do Bootstrap (links para a versão mais recente do Bootstrap) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!--Favicon-->
+  <link rel="icon" href="./img/favicon.png" type="image/x-icon">
+    <title>Recuperar Senha</title>
+</head>
+
+<body>
+    <div class="text-center">
+    <a href="#">
+        <img src="./img/logo.png" id="img" class="img-fluid"><br>
+      </a>
+    </div>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Recuperar Senha</div>
+                    <div class="card-body">
+                        <form action="php/processo_recuperacao.php" method="post">
+                            <div class="form-group">
+                                <label for="email">Endereço de E-mail:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Enviar E-mail de Recuperação</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS do Bootstrap (links para a versão mais recente do Bootstrap) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auntenticação de 2 Fatores</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+</head>
+<body>
+    <div class="autenticacao">
+        <form class="2fa">
+            <strong>Confirmação de Identidade</strong>
+            <br><br>
+
+            <label id="labelPergunta" for="pergunta">Pergunta de Segurança:</label>
+            <select class="pergunta" method="get" action="a2fa.php">
+            <br><br>
+
+            <label id="labelResposta" for="resposta">Resposta Correta:</label>
+            <input class="resposta" method="posta" action="a2fa.php" maxlength="25" required>
+            <br><br>
+
+            <input type="submit" value="Confirmar" class="button">
+        </form>
+    </div>
+</body>

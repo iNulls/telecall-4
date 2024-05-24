@@ -1,0 +1,14 @@
+
+<html>
+<body>
+	<label>Digite o login</label>
+	<input type="text" id="usuario">
+	<button onclick="salvar()">Salvar</button>
+
+	<script>
+		function salvar() {
+			localStorage.setItem("usuario", document.querySelector("#usuario").value);
+		}
+	</script>
+</body>
+</html>
